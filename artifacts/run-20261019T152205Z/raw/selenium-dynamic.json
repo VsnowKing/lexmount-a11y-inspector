@@ -1,0 +1,10 @@
+{
+  "dom_id": "846887",
+  "engine": "http",
+  "fetched_at": "2026-10-19T15:23:06.500478522Z",
+  "final_url": "https://www.selenium.dev/selenium/web/dynamic.html",
+  "html": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n    \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title></title>\n    <script type=\"text/javascript\">\n      var next = 0;\n\n      function addMore() {\n        var box = document.createElement('DIV');\n        box.id = 'box' + next++;\n        box.className = 'redbox';\n        box.style.width = '150px';\n        box.style.height = '150px';\n        box.style.backgroundColor = 'red';\n        box.style.border = '1px solid black';\n        box.style.margin = '5px';\n\n        window.setTimeout(function() {\n          document.body.appendChild(box);\n        }, 1000);\n      }\n\n      function reveal() {\n        var elem = document.getElementById('revealed');\n        window.setTimeout(function() {\n          elem.style.display = '';\n        }, 1000);\n      }\n    </script>\n  </head>\n  <body>\n    <input id=\"adder\" type=\"button\" value=\"Add a box!\" onclick=\"addMore()\"/>\n\n    <input id=\"reveal\" type=\"button\" value=\"Reveal a new input\" onclick=\"reveal();\" />\n\n    <input id=\"revealed\" style=\"display:none;\" />\n  </body>\n</html>",
+  "request_id": "0b19b9d3-2c1a-4b27-b5c5-2bad965c17f7",
+  "status_code": 200,
+  "url": "https://www.selenium.dev/selenium/web/dynamic.html"
+}

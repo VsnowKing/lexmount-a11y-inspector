@@ -1,0 +1,10 @@
+{
+  "dom_id": "846882",
+  "engine": "http",
+  "fetched_at": "2026-10-19T15:22:07.732212007Z",
+  "final_url": "https://example.com",
+  "html": "<!doctype html><html lang=en><head><meta charset=utf-8><link rel=icon href=data:,><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>Example Domain</title><style>html{color-scheme:light dark;background:light-dark(#eee,#222)}body{font:16px/1.6 system-ui,sans-serif;max-width:26em;margin:auto;padding:25vh 2em 2em;text-align:center}</style></head><body><p>This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p><script src=/s.js></script></body></html>\n",
+  "request_id": "f8c5d298-dbf9-4026-ad41-65841a408c70",
+  "status_code": 200,
+  "url": "https://example.com"
+}

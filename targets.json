@@ -1,0 +1,34 @@
+{
+  "targets": [
+    {
+      "id": "example",
+      "name": "Example Domain",
+      "url": "https://example.com"
+    },
+    {
+      "id": "pythonorg",
+      "name": "Python.org",
+      "url": "https://www.python.org/"
+    },
+    {
+      "id": "books",
+      "name": "Books to Scrape",
+      "url": "https://books.toscrape.com/"
+    },
+    {
+      "id": "wai-before",
+      "name": "W3C WAI Bad Demo Before",
+      "url": "https://www.w3.org/WAI/demos/bad/before/home.html"
+    },
+    {
+      "id": "wai-after",
+      "name": "W3C WAI Bad Demo After",
+      "url": "https://www.w3.org/WAI/demos/bad/after/home.html"
+    },
+    {
+      "id": "selenium-dynamic",
+      "name": "Selenium Dynamic Test Page",
+      "url": "https://www.selenium.dev/selenium/web/dynamic.html"
+    }
+  ]
+}

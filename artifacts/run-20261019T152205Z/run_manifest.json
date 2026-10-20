@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-10-19T15:27:52.756238Z",
+  "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+  "engine_preference": "lightmount_domstable",
+  "recovery_note": "Artifacts rebuilt from the same run raw responses after a report-writing bug was fixed.",
+  "security_note": "No API key or project id is stored.",
+  "calls": [
+    {
+      "target_id": "example",
+      "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+      "url": "https://example.com",
+      "target_status_code": 200,
+      "dom_returned": true,
+      "request_id": "f8c5d298-dbf9-4026-ad41-65841a408c70",
+      "dom_id": "846882",
+      "engine": "http",
+      "raw_file": "raw/example.json",
+      "snapshot_file": "dom-snapshots/example.html",
+      "issue_counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    {
+      "target_id": "pythonorg",
+      "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+      "url": "https://www.python.org/",
+      "target_status_code": 200,
+      "dom_returned": true,
+      "request_id": "3ca1a073-e1e6-478b-8b8a-ed39f435ad87",
+      "dom_id": "846894",
+      "engine": "http",
+      "raw_file": "raw/pythonorg.json",
+      "snapshot_file": "dom-snapshots/pythonorg.html",
+      "issue_counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 3
+      }
+    },
+    {
+      "target_id": "books",
+      "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+      "url": "https://books.toscrape.com/",
+      "target_status_code": 200,
+      "dom_returned": true,
+      "request_id": "8e013dff-e2fb-4978-86c7-c127e3d32ab3",
+      "dom_id": "846892",
+      "engine": "http",
+      "raw_file": "raw/books.json",
+      "snapshot_file": "dom-snapshots/books.html",
+      "issue_counts": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      }
+    },
+    {
+      "target_id": "wai-before",
+      "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+      "url": "https://www.w3.org/WAI/demos/bad/before/home.html",
+      "target_status_code": 200,
+      "dom_returned": true,
+      "request_id": "f522cf2b-eec1-47d5-b8a8-26cc4c9ff84b",
+      "dom_id": "846885",
+      "engine": "http",
+      "raw_file": "raw/wai-before.json",
+      "snapshot_file": "dom-snapshots/wai-before.html",
+      "issue_counts": {
+        "high": 34,
+        "medium": 1,
+        "low": 2
+      }
+    },
+    {
+      "target_id": "wai-after",
+      "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+      "url": "https://www.w3.org/WAI/demos/bad/after/home.html",
+      "target_status_code": 200,
+      "dom_returned": true,
+      "request_id": "7f8cd492-3bd0-41fa-b701-f79fdbfb4e24",
+      "dom_id": "846886",
+      "engine": "http",
+      "raw_file": "raw/wai-after.json",
+      "snapshot_file": "dom-snapshots/wai-after.html",
+      "issue_counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      }
+    },
+    {
+      "target_id": "selenium-dynamic",
+      "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+      "url": "https://www.selenium.dev/selenium/web/dynamic.html",
+      "target_status_code": 200,
+      "dom_returned": true,
+      "request_id": "0b19b9d3-2c1a-4b27-b5c5-2bad965c17f7",
+      "dom_id": "846887",
+      "engine": "http",
+      "raw_file": "raw/selenium-dynamic.json",
+      "snapshot_file": "dom-snapshots/selenium-dynamic.html",
+      "issue_counts": {
+        "high": 2,
+        "medium": 1,
+        "low": 0
+      }
+    }
+  ]
+}

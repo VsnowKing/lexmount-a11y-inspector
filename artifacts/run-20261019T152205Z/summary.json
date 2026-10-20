@@ -1,0 +1,617 @@
+{
+  "generated_at": "2026-10-19T15:27:52.756238Z",
+  "endpoint": "https://api.lexmount.cn/v1/dom/dump",
+  "scope": "basic static DOM checks",
+  "targets": 6,
+  "success": 6,
+  "results": [
+    {
+      "id": "example",
+      "name": "Example Domain",
+      "url": "https://example.com",
+      "ok": true,
+      "status": "inspected",
+      "final_url": "https://example.com",
+      "target_status_code": 200,
+      "engine": "http",
+      "request_id": "f8c5d298-dbf9-4026-ad41-65841a408c70",
+      "dom_id": "846882",
+      "issues": [],
+      "metrics": {
+        "images": 0,
+        "images_missing_alt": 0,
+        "form_controls": 0,
+        "controls_missing_label": 0,
+        "buttons": 0,
+        "buttons_missing_name": 0,
+        "links": 0,
+        "generic_links": 0,
+        "headings": 0,
+        "landmarks": [],
+        "has_lang": true,
+        "lang": "en",
+        "title": "Example Domain"
+      },
+      "severity_counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "raw_relative": "raw/example.json",
+      "snapshot_relative": "dom-snapshots/example.html",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "f8c5d298-dbf9-4026-ad41-65841a408c70"
+        }
+      ],
+      "generated_at": "2026-10-19T15:27:52.756238Z"
+    },
+    {
+      "id": "pythonorg",
+      "name": "Python.org",
+      "url": "https://www.python.org/",
+      "ok": true,
+      "status": "inspected",
+      "final_url": "https://www.python.org/",
+      "target_status_code": 200,
+      "engine": "http",
+      "request_id": "3ca1a073-e1e6-478b-8b8a-ed39f435ad87",
+      "dom_id": "846894",
+      "issues": [
+        {
+          "rule": "generic-link-text",
+          "severity": "low",
+          "message": "链接文本不够具体：Learn More",
+          "href": "/doc/",
+          "line": 540,
+          "column": 144
+        },
+        {
+          "rule": "generic-link-text",
+          "severity": "low",
+          "message": "链接文本不够具体：Learn more",
+          "href": "/psf/",
+          "line": 740,
+          "column": 223
+        },
+        {
+          "rule": "duplicate-h1",
+          "severity": "low",
+          "message": "页面有 5 个 h1。"
+        }
+      ],
+      "metrics": {
+        "images": 1,
+        "images_missing_alt": 0,
+        "form_controls": 1,
+        "controls_missing_label": 0,
+        "buttons": 1,
+        "buttons_missing_name": 0,
+        "links": 215,
+        "generic_links": 5,
+        "headings": 14,
+        "landmarks": [
+          "footer",
+          "header",
+          "main",
+          "nav"
+        ],
+        "has_lang": true,
+        "lang": "en",
+        "title": "Welcome to Python.org"
+      },
+      "severity_counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 3
+      },
+      "raw_relative": "raw/pythonorg.json",
+      "snapshot_relative": "dom-snapshots/pythonorg.html",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "3ca1a073-e1e6-478b-8b8a-ed39f435ad87"
+        }
+      ],
+      "generated_at": "2026-10-19T15:27:52.756238Z"
+    },
+    {
+      "id": "books",
+      "name": "Books to Scrape",
+      "url": "https://books.toscrape.com/",
+      "ok": true,
+      "status": "inspected",
+      "final_url": "https://books.toscrape.com/",
+      "target_status_code": 200,
+      "engine": "http",
+      "request_id": "8e013dff-e2fb-4978-86c7-c127e3d32ab3",
+      "dom_id": "846892",
+      "issues": [
+        {
+          "rule": "heading-order",
+          "severity": "medium",
+          "message": "标题层级从 h1 跳到 h3。",
+          "line": 684
+        }
+      ],
+      "metrics": {
+        "images": 20,
+        "images_missing_alt": 0,
+        "form_controls": 0,
+        "controls_missing_label": 0,
+        "buttons": 20,
+        "buttons_missing_name": 0,
+        "links": 94,
+        "generic_links": 0,
+        "headings": 21,
+        "landmarks": [
+          "footer",
+          "header"
+        ],
+        "has_lang": true,
+        "lang": "en-us",
+        "title": "All products | Books to Scrape - Sandbox"
+      },
+      "severity_counts": {
+        "high": 0,
+        "medium": 1,
+        "low": 0
+      },
+      "raw_relative": "raw/books.json",
+      "snapshot_relative": "dom-snapshots/books.html",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "8e013dff-e2fb-4978-86c7-c127e3d32ab3"
+        }
+      ],
+      "generated_at": "2026-10-19T15:27:52.756238Z"
+    },
+    {
+      "id": "wai-before",
+      "name": "W3C WAI Bad Demo Before",
+      "url": "https://www.w3.org/WAI/demos/bad/before/home.html",
+      "ok": true,
+      "status": "inspected",
+      "final_url": "https://www.w3.org/WAI/demos/bad/before/home.html",
+      "target_status_code": 200,
+      "engine": "http",
+      "request_id": "f522cf2b-eec1-47d5-b8a8-26cc4c9ff84b",
+      "dom_id": "846885",
+      "issues": [
+        {
+          "rule": "html-lang",
+          "severity": "high",
+          "message": "页面 <html> 缺少 lang 属性。"
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_left_top.gif",
+          "line": 173,
+          "column": 60
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_top.gif",
+          "line": 174,
+          "column": 56
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_right_top.gif",
+          "line": 175,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_left.gif",
+          "line": 178,
+          "column": 56
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/top_logo_next_end.gif",
+          "line": 183,
+          "column": 37
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/top_weather.gif",
+          "line": 184,
+          "column": 38
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/top_logo_next_start.gif",
+          "line": 185,
+          "column": 37
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/mark.gif",
+          "line": 208,
+          "column": 60
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": ".img/marker2_w.gif",
+          "line": 233,
+          "column": 65
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_w.gif",
+          "line": 244,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_t.gif",
+          "line": 245,
+          "column": 80
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/nav_home.gif",
+          "line": 248,
+          "column": 303
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_w.gif",
+          "line": 251,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/nav_news.gif",
+          "line": 254,
+          "column": 303
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_w.gif",
+          "line": 257,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/nav_facts.gif",
+          "line": 260,
+          "column": 319
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_w.gif",
+          "line": 263,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/nav_survey.gif",
+          "line": 266,
+          "column": 319
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_w.gif",
+          "line": 269,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/blank_5x5.gif",
+          "line": 273,
+          "column": 23
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/headline_middle.gif",
+          "line": 280,
+          "column": 40
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/headline_middle.gif",
+          "line": 281,
+          "column": 40
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/headline_middle.gif",
+          "line": 282,
+          "column": 40
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/blank_5x5.gif",
+          "line": 301,
+          "column": 23
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_t.gif",
+          "line": 305,
+          "column": 81
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_w.gif",
+          "line": 306,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/teaser_right1.jpg",
+          "line": 312,
+          "column": 35
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/marker2_w.gif",
+          "line": 327,
+          "column": 61
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/teaser_right2.jpg",
+          "line": 333,
+          "column": 30
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_right.gif",
+          "line": 354,
+          "column": 57
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_bottom_left.gif",
+          "line": 357,
+          "column": 75
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_bottom.gif",
+          "line": 358,
+          "column": 71
+        },
+        {
+          "rule": "image-alt",
+          "severity": "high",
+          "message": "图片缺少 alt 属性。",
+          "src": "./img/border_bottom_right.gif",
+          "line": 359,
+          "column": 76
+        },
+        {
+          "rule": "control-label",
+          "severity": "medium",
+          "message": "表单控件可能缺少可访问名称：select",
+          "tag": "select",
+          "line": 187,
+          "column": 10
+        },
+        {
+          "rule": "generic-link-text",
+          "severity": "low",
+          "message": "链接文本不够具体：Click here",
+          "href": "../offsite.html",
+          "line": 298,
+          "column": 279
+        },
+        {
+          "rule": "generic-link-text",
+          "severity": "low",
+          "message": "链接文本不够具体：Click here",
+          "href": "../offsite.html",
+          "line": 298,
+          "column": 444
+        }
+      ],
+      "metrics": {
+        "images": 43,
+        "images_missing_alt": 33,
+        "form_controls": 1,
+        "controls_missing_label": 1,
+        "buttons": 0,
+        "buttons_missing_name": 0,
+        "links": 56,
+        "generic_links": 2,
+        "headings": 1,
+        "landmarks": [],
+        "has_lang": false,
+        "lang": "",
+        "title": "Welcome to CityLights! [Inaccessible Home Page]"
+      },
+      "severity_counts": {
+        "high": 34,
+        "medium": 1,
+        "low": 2
+      },
+      "raw_relative": "raw/wai-before.json",
+      "snapshot_relative": "dom-snapshots/wai-before.html",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "f522cf2b-eec1-47d5-b8a8-26cc4c9ff84b"
+        }
+      ],
+      "generated_at": "2026-10-19T15:27:52.756238Z"
+    },
+    {
+      "id": "wai-after",
+      "name": "W3C WAI Bad Demo After",
+      "url": "https://www.w3.org/WAI/demos/bad/after/home.html",
+      "ok": true,
+      "status": "inspected",
+      "final_url": "https://www.w3.org/WAI/demos/bad/after/home.html",
+      "target_status_code": 200,
+      "engine": "http",
+      "request_id": "7f8cd492-3bd0-41fa-b701-f79fdbfb4e24",
+      "dom_id": "846886",
+      "issues": [
+        {
+          "rule": "duplicate-h1",
+          "severity": "low",
+          "message": "页面有 2 个 h1。"
+        }
+      ],
+      "metrics": {
+        "images": 10,
+        "images_missing_alt": 0,
+        "form_controls": 1,
+        "controls_missing_label": 0,
+        "buttons": 0,
+        "buttons_missing_name": 0,
+        "links": 58,
+        "generic_links": 0,
+        "headings": 9,
+        "landmarks": [],
+        "has_lang": true,
+        "lang": "en",
+        "title": "Welcome to CityLights! [Accessible Home Page]"
+      },
+      "severity_counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "raw_relative": "raw/wai-after.json",
+      "snapshot_relative": "dom-snapshots/wai-after.html",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "7f8cd492-3bd0-41fa-b701-f79fdbfb4e24"
+        }
+      ],
+      "generated_at": "2026-10-19T15:27:52.756238Z"
+    },
+    {
+      "id": "selenium-dynamic",
+      "name": "Selenium Dynamic Test Page",
+      "url": "https://www.selenium.dev/selenium/web/dynamic.html",
+      "ok": true,
+      "status": "inspected",
+      "final_url": "https://www.selenium.dev/selenium/web/dynamic.html",
+      "target_status_code": 200,
+      "engine": "http",
+      "request_id": "0b19b9d3-2c1a-4b27-b5c5-2bad965c17f7",
+      "dom_id": "846887",
+      "issues": [
+        {
+          "rule": "html-lang",
+          "severity": "high",
+          "message": "页面 <html> 缺少 lang 属性。"
+        },
+        {
+          "rule": "page-title",
+          "severity": "high",
+          "message": "页面缺少非空 <title>。"
+        },
+        {
+          "rule": "control-label",
+          "severity": "medium",
+          "message": "表单控件可能缺少可访问名称：text",
+          "tag": "input",
+          "line": 37,
+          "column": 4
+        }
+      ],
+      "metrics": {
+        "images": 0,
+        "images_missing_alt": 0,
+        "form_controls": 1,
+        "controls_missing_label": 1,
+        "buttons": 0,
+        "buttons_missing_name": 0,
+        "links": 0,
+        "generic_links": 0,
+        "headings": 0,
+        "landmarks": [],
+        "has_lang": false,
+        "lang": "",
+        "title": ""
+      },
+      "severity_counts": {
+        "high": 2,
+        "medium": 1,
+        "low": 0
+      },
+      "raw_relative": "raw/selenium-dynamic.json",
+      "snapshot_relative": "dom-snapshots/selenium-dynamic.html",
+      "attempts": [
+        {
+          "attempt": 1,
+          "request_id": "0b19b9d3-2c1a-4b27-b5c5-2bad965c17f7"
+        }
+      ],
+      "generated_at": "2026-10-19T15:27:52.756238Z"
+    }
+  ]
+}
